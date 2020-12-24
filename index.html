@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soal UTS</title>
+	
+   	<link rel="stylesheet" href="css/style.css"/>
+	<script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/Pilihan.js"></script>
+  
+  </head>	
+  <body>
+	<div class="container">
+		<div class="main">
+	      <form  method="get" action="index.php" id="form">
+			<h2>FORM UNTUK MEMANGGIL NAMA SENDIRI</h2><hr/>		
+			
+			<label>Nama :</label>
+			<input type="text" name="fnama" id="fnama" />
+			
+			<label>Alamat :</label>
+			<input type="text" name="lalamat" id="lalamat" />
+			
+			<label>Pilih Metode :</label>
+			<span><input type="radio" name="method" value="get" checked> GET 
+			<input type="radio" name="method" value="post" > POST </span>	
+			
+			<input type="submit" name="submit" id="submit" value="Submit">
+		  </form>
+		<?php include "proses.php";?>
+		</div>
+   </div>
+
+  </body>
+</html>
